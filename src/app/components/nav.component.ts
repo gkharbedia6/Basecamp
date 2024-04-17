@@ -10,7 +10,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
       <div
         class="h-[80px] tbt:h-[112px]  px-4 py-6  w-full tbt:px-12 tbt:py-8 flex justify-between items-center"
       >
-        <div class="flex flex-row items-center sm:gap-8 ">
+        <div class="flex flex-row items-center sm:gap-8 flex-grow">
           <a href="/">
             <svg
               width="108"
@@ -63,7 +63,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
           <p class="h-8 w-[2px] bg-primary-light"></p>
 
           <div
-            class="text-black-600 items-end flex-wrap sm:gap-4 hidden sm:flex flex-row justify-start text-body-medium leading-24 tracking-lg  font-regular font-accent font-body"
+            class="text-black-600 items-end flex-wrap sm:gap-8 hidden sm:flex flex-row justify-start text-body-medium leading-24 tracking-lg  font-regular font-accent font-body"
           >
             <a
               class="cursor-pointer hover:text-primary px-5 py-4 hover:bg-primary-light rounded-[16px]"
@@ -84,7 +84,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
             <div
               (mouseenter)="onOtherHover()"
               (mouseleave)="onOtherHover()"
-              class="cursor-pointer flex relative flex-row items-center group"
+              class="cursor-pointer flex relative flex-row items-center group  px-5 py-4"
             >
               <p class="group-hover:text-primary">სხვა</p>
               <div class="w-6 h-6 flex items-center justify-center  ">
@@ -105,7 +105,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
               </div>
               <div
                 *ngIf="drawerOpened"
-                class="w-[180px] h-[280px] absolute flex flex-col items-start px-4 justify-evenly top-[25px] left-0 bg-white shadow-lg rounded-[16px]"
+                class="w-[180px] h-[280px] absolute flex flex-col items-start px-4 justify-evenly top-[40px] left-0 bg-white shadow-lg rounded-[16px]"
               >
                 <a
                   class="cursor-pointer px-5 py-4 hover:text-primary hover:bg-primary-light rounded-[16px] w-full"
